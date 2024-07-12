@@ -4,20 +4,9 @@ our_routes = {"LAX", "JFK", "CDG", "DXB"}
 competitor_routes = {"JFK", "CDG", "LHR", "BKK"}
 
 # 1. Destinations that both airlines fly to.
-
+print(our_routes.intersection(competitor_routes))
 # 2. Destinations unique to your airline.
-
-# 3. Whether there are any destinations that neither airline shares.
-
-
-
 print(our_routes.difference(competitor_routes))
-
-
-print(our_routes.difference)
-
-# Driver Code
-A = {10, 20, 30, 40, 80}
-B = {100, 30, 80, 40, 60}
-print (A.difference(B))
-print (B.difference(A))
+# 3. Whether there are any destinations that neither airline shares.
+print(our_routes.symmetric_difference(competitor_routes))
+# Above instruction was a bit vague so hopefully that's correct :/
